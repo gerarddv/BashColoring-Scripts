@@ -24,12 +24,12 @@ find_color(){
     declare -i color=231
     declare -i cond=0
     if [ $t -eq 0 ]; then
-
+        echo -ne "\e[48;5;231m$3\e[0m"
     elif [ $t -eq 1 ]; then
-
+        echo -ne "\e[48;5;255m$3\e[0m"
     else
         while ($cond=0 && $color<256); do
-            
+
     fi
     case
 
